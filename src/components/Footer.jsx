@@ -12,7 +12,7 @@ export default function Footer() {
   }
 
   const columnHeading = "mb-1 text-eyebrow uppercase tracking-widest text-cream";
-  const link = "text-sm text-cream/75 transition-colors hover:text-cream";
+  const link = "text-sm text-cream/85 transition-colors hover:text-cream";
 
   return (
     <footer className="w-full bg-forest-dark pb-4 pt-8 text-cream">
@@ -27,7 +27,7 @@ export default function Footer() {
                 {business.name}
               </span>
             </div>
-            <p className="max-w-sm text-sm leading-snug text-cream/65">{homeCopy.missionLine}</p>
+            <p className="max-w-sm text-sm leading-snug text-cream/80">{homeCopy.missionLine}</p>
 
             <div className="flex flex-col gap-1.5">
               <a
@@ -39,14 +39,14 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2.5 rounded-lg bg-cream/5 px-3 py-1.5">
                 <Icon name="location_on" size={14} className="mt-0.5 text-clay-soft" />
-                <span className="text-sm text-cream/75">
+                <span className="text-sm text-cream/85">
                   {business.address.street}, {business.address.city}, {business.address.state}{" "}
                   {business.address.zip}
                 </span>
               </div>
               <div className="flex items-start gap-2.5 rounded-lg bg-cream/5 px-3 py-1.5">
                 <Icon name="schedule" size={14} className="mt-0.5 text-clay-soft" />
-                <span className="text-sm text-cream/75">{business.hoursSummary}</span>
+                <span className="text-sm text-cream/85">{business.hoursSummary}</span>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-3 text-sm text-cream/45 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-3 text-sm text-cream/60 md:flex-row">
           <p>
             © {new Date().getFullYear()} {business.name}. All rights reserved.
           </p>
