@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { business, nav } from "../data/content";
 import Button from "./Button";
@@ -9,10 +9,21 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const reduceMotion = useReducedMotion();
+  const { pathname } = useLocation();
+
+  // Belt-and-suspenders close: whichever page link was tapped, once the
+  // route actually changes the mobile sheet should already be gone.
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     function onScroll() {
       setScrolled(window.scrollY > 4);
+      // Closing on the first scroll gesture lets someone dismiss the sheet
+      // just by starting to scroll the page behind it, instead of having
+      // to tap the backdrop or the toggle again.
+      setOpen(false);
     }
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
