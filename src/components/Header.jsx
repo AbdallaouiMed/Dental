@@ -117,7 +117,7 @@ export default function Header() {
             <motion.nav
               id="mobile-nav"
               aria-label="Primary"
-              className="absolute left-0 right-0 top-full z-40 origin-top border-t border-border bg-cream/95 px-margin pb-6 pt-2 backdrop-blur-xl xl:hidden"
+              className="absolute left-0 right-0 top-full z-40 origin-top border-t border-cream/10 bg-forest-dark px-margin pb-6 pt-2 shadow-xl shadow-ink/20 xl:hidden"
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -132,7 +132,7 @@ export default function Header() {
                       onClick={() => setOpen(false)}
                       className={({ isActive }) =>
                         `block rounded-lg px-4 py-3 text-sm font-semibold ${
-                          isActive ? "bg-forest-soft text-forest" : "text-ink-soft"
+                          isActive ? "bg-cream/10 text-cream" : "text-cream/70 hover:text-cream"
                         }`
                       }
                     >
@@ -142,11 +142,11 @@ export default function Header() {
                 ))}
               </ul>
               <div className="mt-4 flex flex-col gap-3">
-                <a href={business.phoneHref} className="flex items-center gap-2 text-sm text-ink">
-                  <Icon name="call" size={18} className="text-clay" />
+                <a href={business.phoneHref} className="flex items-center gap-2 text-sm text-cream">
+                  <Icon name="call" size={18} className="text-clay-soft" />
                   {business.phone}
                 </a>
-                <Button to="/contact" onClick={() => setOpen(false)} className="w-full">
+                <Button to="/contact" variant="onDark" onClick={() => setOpen(false)} className="w-full">
                   Book Appointment
                 </Button>
               </div>

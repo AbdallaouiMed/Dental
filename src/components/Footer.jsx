@@ -15,10 +15,10 @@ export default function Footer() {
   const link = "text-sm text-cream/75 transition-colors hover:text-cream";
 
   return (
-    <footer className="w-full bg-forest-dark pb-10 pt-20 text-cream">
+    <footer className="w-full bg-forest-dark pb-6 pt-12 text-cream">
       <div className="container-page">
-        <div className="mb-14 grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-12">
-          <div className="flex flex-col gap-5 lg:col-span-4">
+        <div className="mb-8 grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-12">
+          <div className="flex flex-col gap-3.5 lg:col-span-4">
             <div className="flex items-center gap-2.5">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-clay text-cream">
                 <Icon name="dentistry" size={17} />
@@ -31,29 +31,29 @@ export default function Footer() {
               {homeCopy.missionLine}
             </p>
 
-            <div className="mt-2 flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
               <a
                 href={business.phoneHref}
-                className="flex items-center gap-3 rounded-xl bg-cream/5 px-4 py-3 transition-colors hover:bg-cream/10"
+                className="flex items-center gap-3 rounded-lg bg-cream/5 px-3.5 py-2 transition-colors hover:bg-cream/10"
               >
-                <Icon name="call" size={18} className="text-clay-soft" />
+                <Icon name="call" size={16} className="text-clay-soft" />
                 <span className="text-sm font-medium text-cream">{business.phone}</span>
               </a>
-              <div className="flex items-start gap-3 rounded-xl bg-cream/5 px-4 py-3">
-                <Icon name="location_on" size={18} className="mt-0.5 text-clay-soft" />
+              <div className="flex items-start gap-3 rounded-lg bg-cream/5 px-3.5 py-2">
+                <Icon name="location_on" size={16} className="mt-0.5 text-clay-soft" />
                 <span className="text-sm text-cream/75">
                   {business.address.street}, {business.address.city}, {business.address.state}{" "}
                   {business.address.zip}
                 </span>
               </div>
-              <div className="flex items-start gap-3 rounded-xl bg-cream/5 px-4 py-3">
-                <Icon name="schedule" size={18} className="mt-0.5 text-clay-soft" />
+              <div className="flex items-start gap-3 rounded-lg bg-cream/5 px-3.5 py-2">
+                <Icon name="schedule" size={16} className="mt-0.5 text-clay-soft" />
                 <span className="text-sm text-cream/75">{business.hoursSummary}</span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 lg:col-span-2">
+          <div className="flex flex-col gap-2 lg:col-span-2">
             <h4 className={columnHeading}>Services</h4>
             {footerLinks.services.map((item) => (
               <Link key={item.label} to={item.to} className={link}>
@@ -62,7 +62,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 lg:col-span-2">
+          <div className="flex flex-col gap-2 lg:col-span-2">
             <h4 className={columnHeading}>Practice</h4>
             {footerLinks.practice.map((item) => (
               <Link key={item.label} to={item.to} className={link}>
@@ -71,7 +71,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 lg:col-span-2">
+          <div className="flex flex-col gap-2 lg:col-span-2">
             <h4 className={columnHeading}>Patients</h4>
             {footerLinks.patients.map((item) => (
               <Link key={item.label} to={item.to} className={link}>
@@ -80,7 +80,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 lg:col-span-2">
+          <div className="flex flex-col gap-2 lg:col-span-2">
             <h4 className={columnHeading}>Newsletter</h4>
             {subscribed ? (
               <p className="text-sm text-clay-soft">Thanks — you're on the list.</p>
@@ -90,11 +90,11 @@ export default function Footer() {
                   type="email"
                   required
                   placeholder="Your email"
-                  className="h-10 rounded-lg bg-cream/10 px-3.5 text-sm text-cream placeholder:text-cream/40 focus:outline-none focus:ring-2 focus:ring-clay/50"
+                  className="h-9 rounded-lg bg-cream/10 px-3.5 text-sm text-cream placeholder:text-cream/40 focus:outline-none focus:ring-2 focus:ring-clay/50"
                 />
                 <button
                   type="submit"
-                  className="press-feedback h-10 rounded-lg bg-clay text-sm font-semibold text-cream transition-colors hover:bg-clay-deep"
+                  className="press-feedback h-9 rounded-lg bg-clay text-sm font-semibold text-cream transition-colors hover:bg-clay-deep"
                 >
                   Subscribe
                 </button>
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-8 text-sm text-cream/45 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-5 text-sm text-cream/45 md:flex-row">
           <p>
             © {new Date().getFullYear()} {business.name}. All rights reserved.
           </p>
