@@ -19,23 +19,6 @@ function findHoursForDate(date) {
   return business.hours.find((h) => h.day === dayName) ?? null;
 }
 
-// Next `count` calendar days starting today, each flagged closed/open per
-// the real weekly schedule.
-export function getUpcomingDays(count = 21) {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  return Array.from({ length: count }, (_, i) => {
-    const date = new Date(today);
-    date.setDate(date.getDate() + i);
-    const entry = findHoursForDate(date);
-    return {
-      date,
-      dayName: date.toLocaleDateString("en-US", { weekday: "long" }),
-      isClosed: !entry || entry.hours === "Closed",
-    };
-  });
-}
 
 // Bookable start times for a given date, at SLOT_INTERVAL_MINUTES steps,
 // stopping early enough that an appointment still fits before closing, and
@@ -77,4 +60,43 @@ export function formatTime(date) {
 
 export function formatDate(date) {
   return date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+}
+
+export function formatMonthYear(date) {
+  return date.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+}
+
+// Full weeks (Sun–Sat) covering `monthDate`'s month, including the leading/
+// trailing days of adjacent months needed to fill each row — the shape a
+// standard calendar grid expects. Each cell is flagged so the UI can grey
+// out/disable anything unbookable (past, closed, or outside the month)
+// without recomputing business hours itself.
+export function getCalendarWeeks(monthDate) {
+  const year = monthDate.getFullYear();
+  const month = monthDate.getMonth();
+  const firstOfMonth = new Date(year, month, 1);
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const startWeekday = firstOfMonth.getDay();
+  const totalCells = Math.ceil((startWeekday + daysInMonth) / 7) * 7;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const gridStart = new Date(year, month, 1 - startWeekday);
+  const cells = Array.from({ length: totalCells }, (_, i) => {
+    const date = new Date(gridStart);
+    date.setDate(date.getDate() + i);
+    const entry = findHoursForDate(date);
+    return {
+      date,
+      inCurrentMonth: date.getMonth() === month,
+      isPast: date < today,
+      isToday: isSameDay(date, today),
+      isClosed: !entry || entry.hours === "Closed",
+    };
+  });
+
+  const weeks = [];
+  for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+  return weeks;
 }
