@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { contactForm } from "../data/content";
 import { formatDate, formatTime } from "../data/scheduling";
 import Button from "./Button";
@@ -15,15 +15,30 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
+  const confirmationRef = useRef(null);
 
   function handleSubmit(event) {
     event.preventDefault();
     setSubmitted(true);
   }
 
+  // The form can be tall enough that submitting it (which swaps the whole
+  // form out for this short message) leaves the confirmation above the
+  // fold — scroll it into view so it's visible without the visitor having
+  // to scroll back up to find it.
+  useEffect(() => {
+    if (submitted) {
+      confirmationRef.current?.scrollIntoView({ behavior: "instant", block: "center" });
+    }
+  }, [submitted]);
+
   if (submitted) {
     return (
-      <div role="status" className="rounded-2xl border border-forest-soft bg-forest-soft/30 p-6">
+      <div
+        ref={confirmationRef}
+        role="status"
+        className="rounded-2xl border border-forest-soft bg-forest-soft/30 p-6"
+      >
         <p className="font-semibold text-forest">Thanks for reaching out!</p>
         <p className="mt-1 text-sm text-ink-soft">
           {selectedDate && selectedTime

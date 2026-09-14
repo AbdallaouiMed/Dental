@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
   getCalendarWeeks,
@@ -54,6 +54,21 @@ export default function BookingScheduler({ selectedDate, selectedTime, onSelectD
     () => new Date(today.getFullYear(), today.getMonth(), 1)
   );
   const [openPanel, setOpenPanel] = useState(null); // null | "date" | "time"
+  const containerRef = useRef(null);
+
+  // Tapping anywhere outside the open panel (the rest of the page) closes
+  // it, same as a native dropdown/select — otherwise the only way to
+  // dismiss it on mobile is re-tapping the exact trigger.
+  useEffect(() => {
+    if (!openPanel) return undefined;
+    function handlePointerDown(event) {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setOpenPanel(null);
+      }
+    }
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [openPanel]);
 
   const weeks = useMemo(() => getCalendarWeeks(visibleMonth), [visibleMonth]);
   const timeSlots = useMemo(() => (selectedDate ? getTimeSlots(selectedDate) : []), [selectedDate]);
@@ -89,7 +104,7 @@ export default function BookingScheduler({ selectedDate, selectedTime, onSelectD
   }
 
   return (
-    <div>
+    <div ref={containerRef}>
       <p className="mb-2.5 text-sm font-semibold text-ink">Preferred Date</p>
       <button
         type="button"
