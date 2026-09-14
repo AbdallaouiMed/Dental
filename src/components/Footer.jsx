@@ -11,7 +11,7 @@ export default function Footer() {
     setSubscribed(true);
   }
 
-  const columnHeading = "mb-1 text-eyebrow uppercase tracking-widest text-cream/45";
+  const columnHeading = "mb-1 text-eyebrow uppercase tracking-widest text-cream";
   const link = "text-sm text-cream/75 transition-colors hover:text-cream";
 
   return (
