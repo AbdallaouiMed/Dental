@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-cream font-body text-[16px] leading-relaxed text-ink antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display text-ink;
+}
+
+:focus-visible {
+  outline: 2px solid theme(colors.clay);
+  outline-offset: 2px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined.icon-fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@layer components {
+  /* Small uppercase kicker used above headings — the one recurring label
+     style, kept as a single class instead of repeating the utility string
+     on every section. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 font-body text-eyebrow uppercase text-clay-deep;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-6 bg-clay;
+  }
+
+  /* Page-level horizontal rhythm, shared by every section. */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-margin;
+  }
+}
+
+/* Instant press feedback for tappable elements. */
+.press-feedback {
+  transition: transform 100ms ease-out;
+}
+.press-feedback:active {
+  transform: scale(0.97);
+}
+@media (prefers-reduced-motion: reduce) {
+  .press-feedback:active {
+    transform: none;
+  }
+}

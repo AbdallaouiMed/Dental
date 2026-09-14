@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0f5238", "on-secondary": "#ffffff", "on-primary-container": "#a8e7c5", "on-background": "#111c2d", "on-primary-fixed": "#002114", "surface-container-high": "#dee8ff", "on-error-container": "#93000a", "tertiary": "#004b74", "primary-fixed-dim": "#95d4b3", "surface-container-lowest": "#ffffff", "primary-container": "#2d6a4f", "on-tertiary-fixed": "#001d31", "tertiary-fixed": "#cce5ff", "surface-tint": "#2c694e", "tertiary-container": "#006499", "on-secondary-fixed-variant": "#005235", "on-secondary-container": "#00734d", "tertiary-fixed-dim": "#93ccff", "on-primary": "#ffffff", "outline-variant": "#bfc9c1", "surface-container": "#e7eeff", "error": "#ba1a1a", "surface-dim": "#cfdaf2", "surface-container-highest": "#d8e3fb", "error-container": "#ffdad6", "outline": "#707973", "background": "#f9f9ff", "secondary-fixed": "#92f7c3", "on-surface": "#111c2d", "primary-fixed": "#b1f0ce", "on-tertiary-fixed-variant": "#004b73", "secondary-fixed-dim": "#75daa8", "on-tertiary-container": "#bbddff", "on-secondary-fixed": "#002113", "inverse-primary": "#95d4b3", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-variant": "#d8e3fb", "on-primary-fixed-variant": "#0e5138", "secondary": "#006c48", "inverse-surface": "#263143", "surface-container-low": "#f0f3ff", "surface-bright": "#f9f9ff", "secondary-container": "#92f7c3", "on-surface-variant": "#404943", "surface": "#f9f9ff", "inverse-on-surface": "#ecf1ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "2.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="sticky top-0 z-50 w-full bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="Brand logo. - Primary color: #2d6a4f
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XE7QaQ5RIEsEsbxQIWCOdV3Rd28uvfC7aR1yVfPem7vUNQr4PT_Sjng56CqeQzXmJHcCDVVXnQ-cwS0xMlqs7YwwqB-Z5mjsCAz9LLZC2td32bw3VMkxJrWU6A76V7a9AcJrWvbZSz4rdTHe2fls7jGvVjTZbMrwTnPsvKRIAXcNNz-sOjeOJ3C-EBde638_Zq3ReusmotpBo3sfubSh680JeCE1mUT5nh-EgZDtfMpfQN3ZKAyJtuyCM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Aura Dental</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Studio &amp; Wellness</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a aria-current="page" class="px-3 py-2 transition-colors duration-150 bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="home" href="#">Home</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" data-path="treatments-and-services" href="#">Treatments &amp; Services</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" data-path="doctors" href="#">Doctors</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" data-path="our-sanctuary" href="#">Our Sanctuary</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" data-path="patient-experience" href="#">Patient Experience</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" data-path="pricing-and-insurance" href="#">Pricing &amp; Insurance</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden lg:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">call</span><span class="tracking-tight">(415) 890-2341</span></div><a class="hidden md:inline-flex items-center px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors duration-150" data-path="portal-login" href="#">Patient Portal</a><a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_20px_-2px_rgba(45,106,79,0.12)] hover:bg-primary-container hover:text-on-primary-container transition-all duration-200" data-path="book-appointment" href="#">Book Appointment</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Decorative Ambient Glow (contained within section) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-10 w-[450px] h-[450px] bg-surface-container/60 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="max-w-7xl mx-auto px-margin pt-12 pb-24 lg:pt-16 lg:pb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column (Content) -->
+<div class="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-8">
+<!-- Status Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container text-primary font-label-caps text-label-caps tracking-wider shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            MINDFUL ORAL SANCTUARY
+          </div>
+<!-- Editorial Headline -->
+<h1 class="font-display-hero text-display-hero text-on-background tracking-tight mb-6">
+            Modern dentistry designed around <span class="text-primary font-bold">your comfort.</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+            Experience biological, pain-free dental wellness inside a tranquil sanctuary. We replace sterile clinical stress with warm hospitality, holistic diagnostics, and restorative care.
+          </p>
+<!-- Dual CTA & Emergency Badge -->
+<div class="flex flex-wrap items-center gap-space-md mb-10 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all duration-200" data-path="book-appointment" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Book Appointment</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all duration-200" data-path="treatments-and-services" href="#">
+<span>Explore Treatments</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<div class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Same-day relief available
+            </div>
+</div>
+<!-- Social Proof Bar -->
+<div class="flex flex-wrap items-center gap-3 pt-6 w-full">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="font-label-md text-label-md text-on-surface">
+<span class="font-bold">4.9 out of 5</span> from 850+ verified patient experiences
+            </div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AACD &amp; UCSF Accredited</span>
+</div>
+</div>
+<!-- Right Column (Hero Visual) -->
+<div class="lg:col-span-5 relative mt-8 lg:mt-0">
+<div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] bg-surface-container">
+<img alt="Happy patient relaxing in the bright, Scandinavian-inspired lounge of Aura Dental Studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XdfTSjmsCG2MJSERclMtXtk9h-Dk5u0E_UdzVZt-nq0D97koDm8Il6RyOaKla8KYn_iBhODF6ZPTUCxXvqh8cbdrW8HNNa6fTiMvsWKlm9v8xJ3gLoFU0L8GzHHVZzto8kRx3rSMvyeyl4XT4YpWWcdTANYzINi-bmyuVoQrkJx0vd220W312SMZYpDKiEseYo5RxHYqH08osIzNiMUAxSj_6XYsol4xm_jM5zMYVvfDkvqc0kHLMgZbA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-on-background/10 to-transparent"></div>
+<!-- Floating Glassmorphism Sensory Pill -->
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-surface/90 backdrop-blur-md shadow-lg">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">spa</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Curated Sensory Comfort</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+                    Noise-cancelling headphones, warm aromatherapy towels, and personalized Netflix streaming during care.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Ambient Geometry -->
+<div class="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-secondary-container/40 blur-xl pointer-events-none -z-10"></div>
+<div class="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none -z-10"></div>
+</div>
+</div>
+</section>
+</div>
+<!-- 2. TRUST SIGNALS & METRICS BAR -->
+<section class="w-full bg-surface-container-low py-12">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">15+ Years</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Biological dental mastery</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">reviews</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">4.9 ★ Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Over 850+ 5-star reviews</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Major PPO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Delta, Cigna, Aetna &amp; MetLife</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="flex items-center gap-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Same-Day</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Emergency self-booking</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SPECIALIZED CARE / TREATMENTS -->
+<section class="max-w-7xl mx-auto px-margin py-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="flex flex-col max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-3">Specialized Care</span>
+<h2 class="font-headline-xl text-headline-xl text-on-background tracking-tight">
+          Designed around total oral wellness.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+          Gentle bio-compatible solutions paired with digital precision diagnostics and aesthetic craftsmanship.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container transition-colors shrink-0" data-path="treatments-and-services" href="#">
+<span>View Complete Treatment Menu</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 4-Column Service Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service Card 1 -->
+<div class="group flex flex-col justify-between p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 -translate-y-0 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Preventative
+            </span>
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">clean_hands</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Preventative &amp; Hygiene</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Gentle ultrasonic therapy, biofilm removal, personalized saliva diagnostics, and enamel remineralization protocols.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold group-hover:gap-2.5 transition-all" data-path="treatments-and-services" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="group flex flex-col justify-between p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 -translate-y-0 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+              Aesthetic
+            </span>
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Cosmetic Dentistry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Handcrafted porcelain veneers, minimally invasive composite micro-bonding, and zero-sensitivity laser whitening.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold group-hover:gap-2.5 transition-all" data-path="treatments-and-services" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="group flex flex-col justify-between p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 -translate-y-0 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+              Precision
+            </span>
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">dentistry</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Restorative &amp; Implants</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Biocompatible restorations, 3D computer-guided ceramic implants, and natural biomimetic ceramic crowns.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold group-hover:gap-2.5 transition-all" data-path="treatments-and-services" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="group flex flex-col justify-between p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 -translate-y-0 hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+              Align
+            </span>
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">grain</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Clear Aligners</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Invisalign® Diamond Certified. High-speed digital smile mapping without uncomfortable silicone trays.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold group-hover:gap-2.5 transition-all" data-path="treatments-and-services" href="#">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. SENSORY DENTAL PILLARS -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-2">The Sanctuary Standard</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background tracking-tight">
+          Crafted to quiet the nervous system.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Every spatial, acoustic, and clinical touchpoint has been re-architected to nurture deep relaxation.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">chair</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Spa-Inspired Spatial Comfort</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Ultra-soft heated ergonomic treatment suites, sunlit Japanese oak millwork, warm herbal tea bar, and customized binaural soundscapes.
+          </p>
+<div class="mt-6 pt-4 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Noise-cancelling headsets standard
+          </div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ultra Low-Dose Digital Tech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            90% reduced radiation digital X-rays, 3D intraoral optical scanning with zero gag reflex triggers, and precision laser gum rejuvenation.
+          </p>
+<div class="mt-6 pt-4 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            No goopy impression paste
+          </div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Transparent, Honest Care</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Guaranteed upfront fee transparency, non-judgmental biological diagnostics, and conservative preventive therapies that preserve natural enamel.
+          </p>
+<div class="mt-6 pt-4 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Zero hidden surprise fees
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. LEAD DOCTOR / TEAM SPOTLIGHT -->
+<section class="max-w-7xl mx-auto px-margin py-24">
+<div class="p-10 lg:p-14 rounded-3xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Portrait Photo -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md bg-surface-container">
+<img alt="Dr. Sarah Jenkins, DDS, Lead Dentist at Aura Dental Studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VeDcVaal4ftK1_3Xfd-tN5pZaqm4GEy31n64JvEwgpZ9_QmnaqHdJZZ-EmkgR5AjBUO-78tTA4A6dHzbbHcCrINeqTB5WDZbGx8IO_-WTVaTkPYrOL8vWdlgyxN4Rbl43s_S-_0JFhyUAOAkHYrEUX1IXB3Qa9FXNMP-A6lzUpK9-iBVIk1xFjqSiH4owkYp8bPc2p4_jbYUB6zrr6Hivs_Ip6hJSrkc1-aNjYtk0OavuL955vqJ3LFA"/>
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="font-label-md text-label-md text-primary font-bold">Dr. Sarah Jenkins, DDS</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Lead Cosmetic &amp; Restorative Dentist • AACD Fellow</div>
+</div>
+</div>
+</div>
+<!-- Right: Bio & Philosophy -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-3">Lead Practitioner &amp; Founder</span>
+<h2 class="font-headline-xl text-headline-xl text-on-background tracking-tight mb-6">
+            Dr. Sarah Jenkins, DDS
+          </h2>
+<blockquote class="font-headline-sm text-headline-sm text-primary font-normal italic leading-snug mb-6 pl-4 border-l-0">
+            “Believing that dental visits should feel restorative rather than clinical, our studio merges high-precision biomimetic science with quiet sensory tranquility.”
+          </blockquote>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8">
+            Dr. Jenkins completed her clinical doctorate at the UCSF School of Dentistry followed by specialized international fellowships in biomimetic restoration and aesthetic veneer design. She has spent over 15 years pioneering anxiety-free treatment protocols, ensuring that patient wellness and clinical precision go hand in hand.
+          </p>
+<!-- Credential Badges -->
+<div class="flex flex-wrap gap-2.5 mb-8">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+              UCSF School of Dentistry
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+              American Academy of Cosmetic Dentistry (AACD)
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+              International Congress of Oral Implantologists
+            </span>
+</div>
+<div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container font-semibold transition-colors" data-path="doctors" href="#">
+<span>Meet Our Full Clinical Team</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. REAL PATIENT TESTIMONIALS -->
+<section class="max-w-7xl mx-auto px-margin pb-24">
+<div class="flex flex-col items-center text-center max-w-xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-2">Real Stories</span>
+<h2 class="font-headline-xl text-headline-xl text-on-background tracking-tight">
+        Peace of mind, verified.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        See how our mindful hospitality is reshaping how San Francisco perceives oral healthcare.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+            “I used to delay cleanings for years from extreme anxiety. Aura feels like a luxury Japanese spa. Zero pain, warm ambient music, and genuine warmth from Dr. Jenkins.”
+          </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Elena M.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">San Francisco • Verified Patient</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">2 days ago</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+            “Got my clear aligners and whitening done here. Digital scanning was swift and didn’t trigger my gag reflex at all. Truly the best healthcare team in the city.”
+          </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">David K.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Presidio Heights • Verified Patient</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Last week</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+            “From the soothing tea in the lounge to the ultra-gentle cleaning, every single detail has been thoughtfully crafted. Dental care finally made peaceful.”
+          </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Maya Lin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pacific Heights • Verified Patient</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3 weeks ago</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. HIGH-IMPACT BOOKING CONCIERGE -->
+<section class="max-w-7xl mx-auto px-margin pb-20">
+<div class="rounded-3xl bg-primary text-on-primary p-10 lg:p-16 shadow-2xl relative overflow-hidden">
+<!-- Decorative Backdrop Geometry -->
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Left Concierge CTA -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest mb-3">
+            Reserve Your Visit
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary tracking-tight mb-4">
+            Ready to experience dental care that feels restorative?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl mb-8 leading-relaxed">
+            New patient consultations include complete 3D wellness mapping, gentle digital cleaning assessment, and complimentary comfort bar access.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold shadow-lg hover:bg-secondary-fixed-dim transition-all" data-path="book-appointment" href="#">
+<span class="material-symbols-outlined text-[20px] mr-2">event_available</span>
+              Book Appointment Now
+            </a>
+<a class="inline-flex items-center justify-center px-6 py-4 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary-container/80 transition-all" href="tel:4158902341">
+<span class="material-symbols-outlined text-[20px] mr-2">call</span>
+              Call Concierge: (415) 890-2341
+            </a>
+</div>
+</div>
+<!-- Right Quick-Info Cards -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="p-6 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md text-on-primary font-semibold">Direct Concierge</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              (415) 890-2341 • care@auradental.com
+            </p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">location_on</span>
+<span class="font-label-md text-label-md text-on-primary font-semibold">Studio Location</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              450 Sutter St, Suite 1200, San Francisco, CA 94108<br/>
+<span class="text-secondary-fixed/90 font-label-sm text-label-sm">Complimentary valet parking available</span>
+</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">schedule</span>
+<span class="font-label-md text-label-md text-on-primary font-semibold">Studio Hours</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              Mon – Fri: 8:00am – 6:00pm<br/>
+              Sat: 9:00am – 2:00pm | Sun: Closed
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low pt-16 pb-12 mt-space-xl shadow-[0_-1px_10px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-gutter mb-12"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #2d6a4f
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XE7QaQ5RIEsEsbxQIWCOdV3Rd28uvfC7aR1yVfPem7vUNQr4PT_Sjng56CqeQzXmJHcCDVVXnQ-cwS0xMlqs7YwwqB-Z5mjsCAz9LLZC2td32bw3VMkxJrWU6A76V7a9AcJrWvbZSz4rdTHe2fls7jGvVjTZbMrwTnPsvKRIAXcNNz-sOjeOJ3C-EBde638_Zq3ReusmotpBo3sfubSh680JeCE1mUT5nh-EgZDtfMpfQN3ZKAyJtuyCM"/><span class="font-headline-sm text-headline-sm text-primary">Aura Dental</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-sm">Elevating modern restorative oral healthcare and aesthetic dentistry through warm hospitality, calm spatial mindfulness, and precise digital innovation.</p><div class="flex flex-col gap-1 mt-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Concierge Desk</span><span>450 Sutter Street, Suite 1800, San Francisco, CA</span><span>Monday – Friday: 8:00 AM – 6:00 PM</span><span class="text-primary font-label-md text-label-md mt-1">(415) 890-2341</span></div></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider mb-space-xs">Treatments</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="treatments-and-services" href="#">Cosmetic &amp; Veneers</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="treatments-and-services" href="#">Clear Aligners</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="treatments-and-services" href="#">Biological Hygiene</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="treatments-and-services" href="#">Dental Implants</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="treatments-and-services" href="#">Laser Therapy</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider mb-space-xs">Sanctuary</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-sanctuary" href="#">The Spa Philosophy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="doctors" href="#">Clinical Team</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="patient-experience" href="#">Aromatherapy Menu</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-sanctuary" href="#">Eco-Minded Clinic</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-sanctuary" href="#">Technology Suite</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider mb-space-xs">Patients</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="book-appointment" href="#">Schedule Visit</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing-and-insurance" href="#">Transparent Pricing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing-and-insurance" href="#">Insurance &amp; Plans</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="patient-experience" href="#">First Visit Ritual</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portal-login" href="#">Records &amp; Forms</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Aura Journal</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Mindful wellness notes, seasonal oral routines, and studio announcements.</p><div class="flex flex-col gap-2"><input class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Your email address" type="email"/><button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" type="button">Subscribe</button></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 Aura Dental Studio &amp; Wellness. All rights reserved.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="hipaa-compliance" href="#">HIPAA Compliance</a><a class="hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></div></div></div></footer></body></html>
